@@ -11,7 +11,7 @@ function isNegative(num) {
   
   }
 }
-
+//Why the undefined in the c.logs? 
 if (require.main === module) {
   console.log('Running sanity checks for isNegative:');
 
