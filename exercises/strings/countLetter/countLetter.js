@@ -23,12 +23,23 @@
 
 function countLetter(string, letter) {
   // This is your job. :)
+  let array=[];
+  const iterable = string;
+  for (const value of iterable) {
+    if (value===letter) {
+      array.push(letter);
+    }
+    console.log(value);
+    //string[letter]
+}
 
-  return num%2 === 0; 
+console.log(array);
+return array.length;
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for countLetter:');
+  console.log(countLetter('Mississippi','s')===4)
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?

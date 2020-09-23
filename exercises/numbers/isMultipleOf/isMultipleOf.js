@@ -14,21 +14,23 @@
  */
 function isMultipleOf(n, d) {
 
-  /*if (d===0) {
+  if (d==0 && n==0) {
     return true;
-  } 
-  else if (d!==0)
-      return false;
-  else 
-      (n%d==0); {
+  } else if (n%d==0) {
     return true; 
-  } */
+  } else {
+    return false;
+  }
   
+  console.log(n%d);
+/*
   if (n%d==0) {
     return true;
   } else {
     return false;
-  }
+  } */
+
+// 0/0 ???
 
   // Consider handling two cases separately:
   //   1. When d === 0
