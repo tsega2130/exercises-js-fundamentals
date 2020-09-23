@@ -23,6 +23,8 @@
 
 function countLetter(string, letter) {
   // This is your job. :)
+
+  return num%2 === 0; 
 }
 
 if (require.main === module) {

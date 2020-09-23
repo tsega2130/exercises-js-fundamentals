@@ -12,13 +12,20 @@
 
 function capitalize(string) {
   // This is your job. :)
+  //make it general
+  return string[0].toUpperCase() + string.slice(1);
+ 
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for capitalize:');
 
+
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
+
+  
+  console.log(capitalize('hey, sanity checks suck:'));
 }
 
 module.exports = capitalize;

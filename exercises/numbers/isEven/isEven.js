@@ -17,8 +17,7 @@ function isEven(num) {
   // Hint: See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators#Remainder
   // The _____ is meant to be "fill in the blank"
   // Look at isZero and compare; what makes sense here?
-
-  return _____;
+  return num%2 === 0;
 }
 
 if (require.main === module) {

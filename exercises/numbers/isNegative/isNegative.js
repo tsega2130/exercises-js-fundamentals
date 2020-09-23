@@ -6,8 +6,8 @@
  */
 function isNegative(num) {
   if (num<0) { 
-    return (true) 
-  } else { (false) 
+    return true 
+  } else { return false
   
   }
 }

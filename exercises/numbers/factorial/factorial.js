@@ -23,11 +23,19 @@
  * @returns {number} The factorial of `n`
  */
 function factorial(n) {
-  // This is your job. :)
+if (n==0) 
+  return 1;
+else { 
+  return (n*factorial(n-1));
+}
 }
 
+//Where is it stored as it is "winding down"?
+//Since n will eventually == 0 as it winds down, it will return 1, why does this not overwrite the previous calculations? 
+//worked w kevin and kyle
 if (require.main === module) {
   console.log('Running sanity checks for factorial:');
+  console.log(factorial(8)); 
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
