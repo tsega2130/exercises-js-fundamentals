@@ -16,16 +16,37 @@
  * @returns {boolean} True if num is even and false otherwise
  */
 function remainderOf(n, d) {
-  /*
-    This is your job. :)
-
-    If you're not sure, step out of the code and use pen + paper. Start
-    with simple examples and pay attention to the process you carry out.
+  /*q= Math.floor(n/d);
+  p= q*d 5= n 2=d
+  return n-p;   
+  
+  if (n===0) {
+    return 0 
+  } 
+    else if ((n-d)<0){ 
+    return n
+    }
+    else { 
+  return (remainderOf((n-d), d));
+  }
   */
+
+ if (n===0) {  
+    return n;
+  } 
+    else if ((n-d)<0) {
+    return n;
+  }
+  else { 
+  return (remainderOf((n-d), d));
+  }
 }
 
 if (require.main === module) {
   console.log('Running sanity checks for remainderOf');
+  console.log(remainderOf(4,2));
+  console.log(remainderOf(15,20));
+
 
   // Add your own sanity checks here.
   // How else will you be sure your code does what you think it does?
