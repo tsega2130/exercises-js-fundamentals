@@ -10,22 +10,17 @@
  * @returns {number} The smallest element in the array
  */
 function smallest(array) {
-  // The _____ on each of the lines below are meant to act
-  // like a fill-in-the-blank so you can see the structure.
-  //
-  // Replace each _____ with some code (not all blanks) will
-  // use the same code.
+  let smallestSoFar= array[0];
 
-  let _____ = _____;
-
-  for (let _____ of _____) {
-    if (_____) {
-      _____ = _____;
+  for (let element of array) {
+    if (element < smallestSoFar) {
+      smallestSoFar = element;
     }
   }
 
-  return _____;
+  return smallestSoFar;
 }
+
 
 if (require.main === module) {
   console.log('Running sanity checks for smallest:');

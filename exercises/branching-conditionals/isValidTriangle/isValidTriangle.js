@@ -1,6 +1,8 @@
 /**
  * Given three numbers, returns true is a triangle exists with those three
  * numbers as side lengths, and false otherwise.
+ * 
+ * //worked on isValidTriangle and daysinMonthbynumber w/ class basically
  *
  * @param {number} a Side length #1
  * @param {number} b Side length #2
@@ -8,17 +10,11 @@
  * @returns {boolean} True if a triangle exists with side lengths of a, b, and c. Returns false otherwise.
  */
 function isValidTriangle(a, b, c) {
-  /*
-    Before you go Googling, get out a piece of paper and draw some triangles.
-
-    If you draw two sides of length A and B, are there values of a potential
-    third length (C) that make it impossible to form a triangle?
-
-    If the problem is still to hard, simplify even more. What if you draw two
-    side of the same length? Imagine the angle between the two sides increasing
-    from 0º and you drawing the third side. What's the largest this third side
-    could ever be?
-  */
+  if ( a + b > c || b + c > a || c + a > b) {
+    return true
+  } else { 
+    return false
+  }
 }
 
 if (require.main === module) {
